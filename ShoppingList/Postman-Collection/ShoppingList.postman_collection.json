@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "81d94b7d-bcc6-42db-b9db-1fb0583433d1",
+		"name": "ShoppingList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:52743/API/ShoppingList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52743",
+					"path": [
+						"API",
+						"ShoppingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:52743/API/ShoppingList/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52743",
+					"path": [
+						"API",
+						"ShoppingList",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item to list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemName\": \"Bagels\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52743/API/ShoppingList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52743",
+					"path": [
+						"API",
+						"ShoppingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 2,\n        \"itemName\": \"Orange Juice\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:52743/API/ShoppingList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52743",
+					"path": [
+						"API",
+						"ShoppingList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
